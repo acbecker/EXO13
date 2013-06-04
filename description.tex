@@ -132,7 +132,7 @@ we define the transit duration deviation, $\Delta$, as
 \begin{equation}\label{eq:tdd}
 \Delta = \frac{T}{T_c} = \frac{v_c}{v_\theta}  = \frac{1+e\cos\theta}{\sqrt{1-e^2}}.
 \end{equation}
-If we assume we observe the planet at either apocenter or pericenterm then we find
+If we assume we observe the planet at either apocenter or pericenter then we find
 \begin{equation}\label{eq:emin}
 e_{min} = \left|\frac{\Delta^2 - 1}{\Delta^2 + 1}\right|
 \end{equation}
@@ -266,7 +266,7 @@ $P > 4$ d. The transition occurs at 2~\rearth, which in this case is $R_{crit}$.
 
 
 However, as \kepler data do not provide eccentricity, we must transform this output
-into a form that is directly comparable to an observable, \ie $e_{min}$. In order to
+into a form that is directly comparable to an observable, i.e. $e_{min}$. In order to
 calculate $e_{min}$ from these synthetic data, we choose a random
 value for $\theta$ and calculate the velocity according to
 Eq.~\ref{eq:velocity}. We calculate the average minimum eccentricity
@@ -790,7 +790,7 @@ list.  We find 1168 objects with appropriate values of $P$ and $R_p$,
 and with host star mass estimates between 0.7 and 1.4 \msun, i.e. FGK
 stars.  We expect this list to expand somewhat with on--going study of
 the \kepler data; we anticipate running our pipeline on approximately
-1000 systems.
+1300 systems.
 
 As described above, our analysis requires a measure of the orbital
 separation relative to the stellar radius, $\alpha = a / R_*$, to
@@ -885,8 +885,8 @@ For a 5--day period system having $\sim$ 300 transits over the assumed
 17--quarter operational lifetime of \kepler, this comes out to $\sim$
 21 CPU--days of analysis.  The {\tt emcee} code is natively able to
 use multiprocessing capabilities, making this trivial to implement on
-a multi--core system.  However, with $\sim 1000$ systems on our
-analysis path, this will require $\sim 60$ CPU--years of computation,
+a multi--core system.  However, with $\sim 1300$ systems on our
+analysis path, this will require $\sim 75$ CPU--years of computation,
 requiring the use of NASA's High-End Computing (HEC) facilities.  We
 will also make use of the local {\tt Hyak} compute cluster when it is
 available.
@@ -1087,15 +1087,14 @@ Exobiology and Evolutionary Biology call for proposals, in particular:
 \begin{itemize}
 
 \item {\bf Planetary Conditions for Life}: 
-This research delineates planetary conditions conducive to the origin
+This research delineates the planetary conditions conducive to the origin
 of life by determining the maximum radius permitted for rocky
-exoplanets. As gaseous bodies are not expected to be habitable, this
-identification of this boundary is critical for a successful search
+exoplanets. Since gaseous bodies are not expected to be habitable, understanding this boundary is critical in a search
 for extraterrestrial life. The \kepler spacecraft was designed to find
 small, potentially terrestrial planets in orbits that are not amenable
-to mass measurements, but our preliminary studies presented here
-demonstrate that a careful analysis of \kepler data can provide strong
-constraints on the composition of \kepler planets. Furthermore, constraining the importance of planetary system architecture, atmospheric mass loss, and tidal dissipation are also important aspects of the planetary habitability puzzle.
+to mass measurements, but the preliminary studies presented here
+demonstrate that a careful analysis of \kepler data {\it can} provide strong
+constraints on planetary composition.  Furthermore, planetary system architecture, atmospheric mass loss, and tidal dissipation of planets are important aspects of the habitability puzzle, and are directly addressed by this proposal.
 
 \end{itemize}
 
@@ -1139,9 +1138,9 @@ software robust to detrending errors, missing data, and initial
 conditions.  Discovering and understanding the failure modes will be a
 main focus of this computationally--intensive first year.  Becker will
 lead this effort, and transition the student into lead during the
-year.  The generation of the MCMC chains is expected to take $\sim 60$
+year.  The generation of the MCMC chains is expected to take $\sim 75$
 CPU--years, requiring the use of high--end computing facilities. The
-validation of these chains is expected to take a comparable amount of
+validation of these chains is expected to take a non--negligible amount of
 time, as some chains are expected to have to be re--run or extended.
 The goal of this first year is to have finalized the MCMC chains on
 $t_0, \beta_0^2, \tau, \zeta$ for all transits of all KOIs.  We will
